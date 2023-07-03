@@ -1,7 +1,7 @@
 # Assembler
 <h2>Motivation</h2>
-This project was mainly constructed to comprehend the practical understanding of the task of writing an assembler. It is inspired by
-[nand2tetris](https://www.nand2tetris.org/)https://www.nand2tetris.org/ course.
+This project was mainly constructed to comprehend the practical understanding of the task of writing an assembler. It is inspired by the course
+<a href = "https://www.nand2tetris.org/)https://www.nand2tetris.org/">nand2tetris</a>.
 
 The input to the assembler is a .sal file which gets processed by the main.cpp file consisting of various functions that it uses to
 produce its equivalent binary code (.bin file). This project is not the precise representation of how an actual assembly language
@@ -25,7 +25,7 @@ For instance, if the SAL file is called prog.sal, then the output file will be c
 
 <h2>Data and Instructions</h2>
 The following example shows both data and code sections and how they are introduced in a SAL source file:
-![image](https://github.com/02MESH/Assembler/assets/77836906/27d81fa2-f24a-4308-bdc9-586391653fd2)
+<img src = "images/instructions.png" alt = "instructions">
 Variables are introduced in the '.data' section which exists on a line by itself. On the other hand, the '.code' sections represents the
 actual code.
 
@@ -35,29 +35,37 @@ optionally separated by spaces. The label naes does not include the colon symbol
 labels, on successive lines, may be used to label the same instruction.
 
 <h2>Conventions</h2>
-![image](https://github.com/02MESH/Assembler/assets/77836906/454d8d85-49a2-4b3e-b3de-28a19feefc38)
+<img src = "images/format.png" alt = "format">
 There is a distinct manifestation between the addr and value operands 2476 and #3476. The former is an address and the latter is a value.
 They are distinguished by the presence of a # character. Examples will be provided in the following examples below.
 
 <h2>Instruction Format</h2>
 SAL instructions are encoded as either 1 or 2 16-character binary strings. The first 16-bits are encoded as follows:
-![image](https://github.com/02MESH/Assembler/assets/77836906/1ff21690-90da-4b78-b6ab-ee85ae028784)
+<img src = "images/instructionformat.png" alt = "instructionFormat">
+
 <h2>Opcodes</h2>
 These are 4-bit opcode encodings of all the SAL instructions the assembler recognises.
-![image](https://github.com/02MESH/Assembler/assets/77836906/2a986478-2612-46a3-af85-a2fabd95347f)
+<img src = "images/opcode1.png" alt = "opcode1">
 Some of the examples are shown below;
-![image](https://github.com/02MESH/Assembler/assets/77836906/0604e650-d8c3-47f5-9425-e743142f1eaf)
+<img src = "images/opcode2(eg).png" alt = "opcode2">
+
+<h2>Bash Script</h2>
+In order execute the commands, the bash scripts need to be as follows;
+The instruction for compile would be such as the line below;
+bash ./compile.sh
+The instruction to assemble the code along with the .sal file would be such as the line below;
+bash ./assemble.sh filename.sal
 
 <h2>Examples with actual files</h2>
 <h3>ex1.sal</h3>
-![image](https://github.com/02MESH/Assembler/assets/77836906/602179b7-c8a7-430c-b730-8f24d11af48a)
+<img src = "images/ex1.png" alt = "ex1">
 <h3>ex2.sal</h3>
-![image](https://github.com/02MESH/Assembler/assets/77836906/fd2c08fa-5cc5-456c-a157-3d877b4a493c)
+<img src = "images/ex2.png" alt = "ex2">
 <h3>ex3.sal</h3>
-![image](https://github.com/02MESH/Assembler/assets/77836906/4f3e9cf4-2380-4276-9725-36eab117eeb4)
+<img src = "images/ex3.png" alt = "ex3">
 <h3>ex4.sal</h3>
-![image](https://github.com/02MESH/Assembler/assets/77836906/22f8b01b-5f42-4b82-90c6-02c0497eb758)
+<img src = "images/ex4.png" alt = "ex4">
 <h3>ex5.sal</h3>
-![image](https://github.com/02MESH/Assembler/assets/77836906/7ebf5793-b730-4b01-8929-dede010284ae)
+<img src = "images/ex5.png" alt = "ex5">
 
 
