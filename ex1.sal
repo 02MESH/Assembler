@@ -1,0 +1,10 @@
+.data
+    x
+    sum
+.code
+loop:
+    LOAD r0, x
+    ADD r0, #345
+    INC r1
+    STORE r0, sum
+    JMP loop

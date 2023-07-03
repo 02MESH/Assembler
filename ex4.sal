@@ -1,0 +1,8 @@
+.code
+loop:
+    ADD r3, #5
+    ADD r3, 5
+    ADD r3, r0
+    ADD r3, #256
+    NOT r1
+    JMP loop

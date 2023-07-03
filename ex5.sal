@@ -1,0 +1,11 @@
+.code
+    ADD r3, #5
+    ADD r3, 5
+back:
+    ADD r3, r0
+    JMP fwd
+    SUB r3, #256
+    NOT r1
+fwd:
+    DEC r3
+    JGT r3, back

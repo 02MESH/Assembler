@@ -1,0 +1,5 @@
+.code
+loop:
+    LOAD r3, #10
+    DEC r3
+    JGT r3,loop
