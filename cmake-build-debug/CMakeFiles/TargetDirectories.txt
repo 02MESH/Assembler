@@ -1,3 +1,0 @@
-E:/Assignments/2nd Year/Computer Systems/assignment3/cmake-build-debug/CMakeFiles/assignment3.dir
-E:/Assignments/2nd Year/Computer Systems/assignment3/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/Assignments/2nd Year/Computer Systems/assignment3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
